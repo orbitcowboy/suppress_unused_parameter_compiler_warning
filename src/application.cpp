@@ -16,6 +16,12 @@
     #define UNUSED(identifier) identifier
 #endif
 
+// This testfunction causes a compiler warning about unused an parameter
+void vTest(int iVar)
+{
+}
+
+
 /// possibility 1:
 
 void vTest1(int UNUSED(dVar))
