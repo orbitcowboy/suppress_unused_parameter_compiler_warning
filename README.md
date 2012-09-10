@@ -5,4 +5,4 @@ A minimal project to demonstrate how to suppress unused parameter warnings (in C
 
 A detailed description can be found at:
 
-https://sites.google.com/site/opensourceconstriubtions/ettl-martin-1/suppress-unused-parameter-compiler-warning
+https://sites.google.com/site/opensourceconstriubtions/ettl-martin-1/articles/suppress-unused-parameter-compiler-warning
