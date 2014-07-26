@@ -16,33 +16,32 @@
     #define UNUSED(identifier) identifier
 #endif
 
-// This testfunction causes a compiler warning about unused an parameter
+// This testfunction causes a compiler warning about an unused parameter
 void vTest(int iVar)
 {
 }
 
 
-/// possibility 1:
-
+/// Possibility 1:
 void vTest1(int UNUSED(dVar))
 {
 
 }
 
 
-/// possibility 2:
+/// Possibility 2:
 void vTest2(int i __attribute__((unused)))
 {
 
 } 
 
-/// possibility 3:
+/// Possibility 3:
 void vTest3(int i)
 {
 	(void)i;
 }
 
-/// possibility 4:
+/// Possibility 4:
 /// cppcheck gives a waring: [../src/Application.cpp:35]: (warning) Redundant assignment of "i" to itself
 /// clang warning: Application.cpp:36:3: warning: explicitly assigning a variable of type 'int' to itself [-Wself-assign]
 //      i=i;
